@@ -47,6 +47,16 @@ Google scans apps installed outside the Play Store and may block a new app it do
 
 > Leave Play Protect **on** for everything else — only toggle it off for this one install, then switch it back.
 
+### Threat Monitoring greyed out? (notification access)
+
+To watch notifications for scams, CyberBenji needs **notification access**. On Android 13+, apps installed outside the Play Store have this blocked by default ("Restricted setting"). Allow it once:
+
+1. Long-press the CyberBenji icon → **App info** (or **Settings → Apps → CyberBenji**).
+2. Tap the **⋮ menu** (top-right) → **Allow restricted settings**, confirm with your PIN/fingerprint.
+3. Back in CyberBenji, tap **Enable notification access** and switch CyberBenji **on**.
+
+Scanning runs on-device — notifications never leave your phone.
+
 ### Prefer not to unzip? Two free options
 
 - **Firefox** (free from the Play Store): open this page in Firefox and tap the [direct APK link](https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji.apk) (~28 MB). Firefox lets `.apk` files download normally — nothing to unzip.
