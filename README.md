@@ -30,28 +30,20 @@ Scan links, files and messages · block malicious domains · monitor threats · 
 
 ## Install
 
-1. **[Download the APK](https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji.apk)** on your phone (~25 MB, Android 8.0+). Older or 32-bit phones can use the [universal build](https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji-universal.apk) (~70 MB) instead.
-2. When prompted, allow your browser or Files app to **install unknown apps** (required for any app installed outside the Play Store).
-3. Tap the downloaded file to install, then open it. No account, no payment.
+The main download is a **ZIP** (~16 MB) so it finishes in any browser — Chrome blocks raw `.apk` files, but not ZIPs.
 
-> Each release lists the APK's **SHA-256** so you can verify the file you downloaded is the official one.
+1. **[Download CyberBenji](https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji-apk.zip)** on your phone, then open the saved file in your Files app and **extract** it. If your Files app can't unzip, install **ZArchiver** (free) and extract with that.
+2. Tap the extracted `cyberbenji.apk`. Allow **install unknown apps** if asked (required outside the Play Store).
+3. If Android warns the app is "unknown", tap **More details → Install anyway**, then open it. No account, no payment.
 
-### Download stops at 100% / won't finish?
+> Each release lists the file **SHA-256** so you can verify your download is the official one.
 
-Some browsers (especially Chrome) block `.apk` downloads. Two free fixes:
+### Prefer not to unzip? Two free options
 
-- **Easiest — use Firefox** (free from the Play Store): open this page in Firefox and download the `.apk` directly. It doesn't block them, and there's nothing to extract.
-- **Or download the [ZIP version](https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji-apk.zip)** (~16 MB) and extract it with a ZIP-capable file manager such as **ZArchiver** (Android's built-in extractor often fails), then tap the `.apk` inside.
+- **Firefox** (free from the Play Store): open this page in Firefox and tap the [direct APK link](https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji.apk) (~28 MB). Firefox lets `.apk` files download normally — nothing to unzip.
+- **Obtainium** (auto-updates): [**Obtainium**](https://obtainium.imranr.dev) installs CyberBenji from GitHub and keeps it updated. Install it, tap **Add App**, paste `https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app`, then pick `cyberbenji.apk`.
 
-After downloading, if Android warns the app is "unknown", tap **More details → Install anyway** (normal for any app outside the Play Store).
-
-### Want automatic updates? (optional)
-
-[**Obtainium**](https://obtainium.imranr.dev) is a free, open-source app that installs CyberBenji straight from GitHub and notifies you when a new version ships — like a Play Store, with no account or cost:
-
-1. Install Obtainium (from [obtainium.imranr.dev](https://obtainium.imranr.dev) or its [GitHub releases](https://github.com/ImranR98/Obtainium/releases/latest)).
-2. Open it → **Add App** → paste `https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app` → **Add**.
-3. If asked which file, pick `cyberbenji.apk`, then **Install**. Obtainium handles all future updates automatically.
+> Older or 32-bit phones: use the [universal APK](https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji-universal.apk) (~70 MB), opened in Firefox.
 
 ## Privacy & security
 
