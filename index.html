@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CyberBenji — Free mobile security toolkit</title>
+<meta name="description" content="CyberBenji is a free, on-device Android security toolkit: scan links, files and messages, monitor threats, block malicious domains, check your digital footprint and network exposure. No account, no cost.">
+<meta property="og:title" content="CyberBenji — Free mobile security toolkit">
+<meta property="og:description" content="Scan links, files & messages, block malicious domains, check your digital footprint — free, on-device, no account.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.png" type="image/png">
+<style>
+  :root{
+    --bg:#0D1117; --surface:#161B22; --surface2:#1C232D;
+    --border:rgba(255,255,255,.10); --text:#E6EDF3; --muted:#8B949E;
+    --accent:#58A6FF; --green:#2EA043; --danger:#F85149; --warning:#D29922;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent); text-decoration:none}
+  .wrap{max-width:1040px; margin:0 auto; padding:0 20px}
+  .glow{
+    position:fixed; inset:0; z-index:0; pointer-events:none;
+    background:
+      radial-gradient(600px 300px at 15% -5%, rgba(88,166,255,.14), transparent 60%),
+      radial-gradient(500px 280px at 90% 0%, rgba(46,160,67,.10), transparent 60%);
+  }
+  header,main,footer{position:relative; z-index:1}
+
+  /* Hero */
+  .hero{padding:72px 0 40px; text-align:center}
+  .logo{width:92px; height:92px; border-radius:22px; box-shadow:0 8px 40px rgba(88,166,255,.25)}
+  h1{font-size:clamp(34px,6vw,54px); margin:22px 0 6px; letter-spacing:-.5px; font-weight:800}
+  .tag{font-size:clamp(16px,2.4vw,20px); color:var(--muted); margin:0 auto 22px; max-width:620px}
+  .pills{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:30px}
+  .pill{
+    font-size:13px; color:var(--text); background:var(--surface); border:1px solid var(--border);
+    padding:6px 13px; border-radius:999px;
+  }
+  .pill b{color:var(--green)}
+  .cta{
+    display:inline-flex; align-items:center; gap:10px; background:var(--accent); color:#08131F;
+    font-weight:700; font-size:17px; padding:15px 30px; border-radius:12px; border:0; cursor:pointer;
+    box-shadow:0 6px 24px rgba(88,166,255,.35); transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .cta:hover{transform:translateY(-2px); box-shadow:0 10px 30px rgba(88,166,255,.45)}
+  .cta svg{width:20px;height:20px}
+  .meta{margin-top:14px; font-size:13px; color:var(--muted)}
+  .meta span{white-space:nowrap}
+
+  /* Sections */
+  section{padding:46px 0}
+  h2{font-size:clamp(24px,3.4vw,32px); margin:0 0 6px; font-weight:800; letter-spacing:-.3px}
+  .sub{color:var(--muted); margin:0 0 30px; max-width:640px}
+
+  /* Feature grid */
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px}
+  .card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:22px; transition:border-color .15s ease, transform .15s ease;
+  }
+  .card:hover{border-color:rgba(88,166,255,.5); transform:translateY(-3px)}
+  .card .ic{
+    width:42px;height:42px;border-radius:11px;display:grid;place-items:center;margin-bottom:14px;
+    background:rgba(88,166,255,.12); color:var(--accent); font-size:22px;
+  }
+  .card h3{margin:0 0 6px; font-size:17px}
+  .card p{margin:0; color:var(--muted); font-size:14.5px}
+
+  /* Steps */
+  .steps{counter-reset:step; display:grid; gap:14px; max-width:720px}
+  .step{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:18px 20px 18px 62px; position:relative;
+  }
+  .step::before{
+    counter-increment:step; content:counter(step);
+    position:absolute; left:18px; top:50%; transform:translateY(-50%);
+    width:30px;height:30px;border-radius:50%; background:var(--accent); color:#08131F;
+    font-weight:800; display:grid; place-items:center; font-size:15px;
+  }
+  .step h3{margin:0 0 3px; font-size:16px}
+  .step p{margin:0; color:var(--muted); font-size:14px}
+
+  /* Note box */
+  .note{
+    background:var(--surface); border:1px solid var(--border); border-left:3px solid var(--accent);
+    border-radius:var(--radius); padding:20px 22px;
+  }
+  .note.warn{border-left-color:var(--warning)}
+  .note h3{margin:0 0 8px; font-size:16px}
+  .note p{margin:0 0 8px; color:var(--muted); font-size:14.5px}
+  .note p:last-child{margin:0}
+
+  footer{border-top:1px solid var(--border); padding:30px 0 60px; color:var(--muted); font-size:13.5px; text-align:center}
+  .dl-bottom{text-align:center; padding-top:6px}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+
+<header class="wrap hero">
+  <img class="logo" src="logo.png" alt="CyberBenji logo">
+  <h1>CyberBenji</h1>
+  <p class="tag">A free, on-device security toolkit for Android — scan links, files and messages, block malicious sites, and see what the internet knows about you.</p>
+  <div class="pills">
+    <span class="pill"><b>Free</b> — all features</span>
+    <span class="pill">No account</span>
+    <span class="pill">Runs on-device</span>
+  </div>
+  <a class="cta" id="download" href="https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji.apk">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+    Download for Android
+  </a>
+  <div class="meta"><span>Version 1.0.0</span> &nbsp;·&nbsp; <span>~70 MB APK</span> &nbsp;·&nbsp; <span>Android 8.0+</span></div>
+</header>
+
+<main>
+  <section class="wrap">
+    <h2>What it does</h2>
+    <p class="sub">Practical protection that works without rooting your phone, signing up, or paying.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ic">🔗</div>
+        <h3>Scan links, files &amp; messages</h3>
+        <p>Check a URL, QR code, downloaded file or suspicious message against known-threat intelligence before you trust it.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🛡️</div>
+        <h3>Live threat monitor</h3>
+        <p>Watches incoming notifications for phishing and scam patterns and warns you the moment something risky arrives.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🌐</div>
+        <h3>DNS Guard</h3>
+        <p>Blocks ads, trackers, malware and adult domains device-wide using a local, private DNS filter — no traffic leaves your phone unprotected.</p>
+      </div>
+      <div class="card">
+        <div class="ic">📡</div>
+        <h3>Network &amp; exposure</h3>
+        <p>See the devices on your Wi-Fi and check what the public internet can see about your connection — open ports and known weaknesses.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🔎</div>
+        <h3>Digital footprint (OSINT)</h3>
+        <p>Find where your username or email shows up across the web and whether it has appeared in a known data breach.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🧰</div>
+        <h3>Privacy tools</h3>
+        <p>Inspect file metadata and other on-device utilities that help you understand and reduce what you share.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>Install in three steps</h2>
+    <p class="sub">CyberBenji is distributed directly as an APK, so you install it yourself rather than through a store.</p>
+    <div class="steps">
+      <div class="step"><h3>Download the APK</h3><p>Tap “Download for Android” above on your phone.</p></div>
+      <div class="step"><h3>Allow the install</h3><p>When prompted, allow your browser or Files app to “install unknown apps”. This is required for any app installed outside the Play Store.</p></div>
+      <div class="step"><h3>Open CyberBenji</h3><p>Tap the downloaded file to install, then open it. No account or payment — you’re ready.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>Privacy &amp; security</h2>
+    <div class="grid">
+      <div class="note">
+        <h3>Your data stays on your phone</h3>
+        <p>Scans and checks run on-device. CyberBenji has no user accounts and no analytics tracking you.</p>
+        <p>When a feature needs external threat intelligence (for example to check a link), only the item being checked is sent to the relevant lookup service — never your personal data.</p>
+      </div>
+      <div class="note warn">
+        <h3>Honest about limits</h3>
+        <p>CyberBenji is a real toolkit, not magic. It raises the bar against common threats but can’t guarantee protection from every attack.</p>
+        <p>It’s Android-only for now. Some features rely on Android system services and wouldn’t work the same way on other platforms.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap dl-bottom">
+    <a class="cta" href="https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji.apk">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+      Download CyberBenji
+    </a>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>CyberBenji — free mobile security for everyone.</p>
+  <p>Built independently. Not affiliated with any security vendor or platform.</p>
+</footer>
+
+</body>
+</html>
