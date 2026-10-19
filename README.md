@@ -40,8 +40,8 @@ Scan links, files and messages · block malicious domains · monitor threats · 
 
 Some browsers (especially Chrome) block `.apk` downloads. Two free fixes:
 
-- **Download the [ZIP version](https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji-apk.zip)** (~16 MB), then open it in your Files app, extract it, and tap the `.apk` inside. Browsers don't block ZIP files.
-- **Or use Firefox / Samsung Internet** instead of Chrome — they let `.apk` files download normally.
+- **Easiest — use Firefox** (free from the Play Store): open this page in Firefox and download the `.apk` directly. It doesn't block them, and there's nothing to extract.
+- **Or download the [ZIP version](https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji-apk.zip)** (~16 MB) and extract it with a ZIP-capable file manager such as **ZArchiver** (Android's built-in extractor often fails), then tap the `.apk` inside.
 
 After downloading, if Android warns the app is "unknown", tap **More details → Install anyway** (normal for any app outside the Play Store).
 
