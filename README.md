@@ -36,6 +36,15 @@ Scan links, files and messages · block malicious domains · monitor threats · 
 
 > Each release lists the APK's **SHA-256** so you can verify the file you downloaded is the official one.
 
+### Download stops at 100% / won't finish?
+
+Some browsers (especially Chrome) block `.apk` downloads. Two free fixes:
+
+- **Download the [ZIP version](https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji-apk.zip)** (~16 MB), then open it in your Files app, extract it, and tap the `.apk` inside. Browsers don't block ZIP files.
+- **Or use Firefox / Samsung Internet** instead of Chrome — they let `.apk` files download normally.
+
+After downloading, if Android warns the app is "unknown", tap **More details → Install anyway** (normal for any app outside the Play Store).
+
 ## Privacy & security
 
 - Scans run **on-device**. There are no user accounts and no analytics tracking you.

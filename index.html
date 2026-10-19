@@ -54,6 +54,8 @@
   .meta{margin-top:14px; font-size:13px; color:var(--muted)}
   .meta span{white-space:nowrap}
   .fallback{margin-top:8px; font-size:12.5px; color:var(--muted)}
+  code{background:var(--surface2); padding:1px 6px; border-radius:5px; font-size:0.9em; color:var(--text)}
+  .ziplink{display:inline-block; margin-top:4px; font-weight:600}
 
   /* Sections */
   section{padding:46px 0}
@@ -169,6 +171,23 @@
       <div class="step"><h3>Allow the install</h3><p>When prompted, allow your browser or Files app to “install unknown apps”. This is required for any app installed outside the Play Store.</p></div>
       <div class="step"><h3>Open CyberBenji</h3><p>Tap the downloaded file to install, then open it. No account or payment — you’re ready.</p></div>
     </div>
+  </section>
+
+  <section class="wrap">
+    <h2>Download won’t finish?</h2>
+    <p class="sub">Some browsers (especially Chrome) block <code>.apk</code> files — the download reaches 100% then stops or disappears. Two free ways around it:</p>
+    <div class="grid">
+      <div class="note">
+        <h3>Option A — download the ZIP</h3>
+        <p>Grab the zipped version, then open it in your <b>Files app</b> → extract → tap the <code>.apk</code> inside to install. Browsers don’t block ZIP files.</p>
+        <p><a class="ziplink" href="https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji-apk.zip">⬇️ Download CyberBenji (ZIP, ~16 MB)</a></p>
+      </div>
+      <div class="note">
+        <h3>Option B — use a different browser</h3>
+        <p>Open this page in <b>Firefox</b> (or Samsung Internet) and tap Download — they let <code>.apk</code> files finish downloading normally. Then tap the file to install.</p>
+      </div>
+    </div>
+    <p class="sub" style="margin-top:18px">After it downloads, Android may say the app is “unknown” — tap <b>More details → Install anyway</b>. That’s normal for any app installed outside the Play Store.</p>
   </section>
 
   <section class="wrap">
