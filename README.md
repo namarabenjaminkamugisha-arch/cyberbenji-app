@@ -38,6 +38,15 @@ The main download is a **ZIP** (~16 MB) so it finishes in any browser — Chrome
 
 > Each release lists the file **SHA-256** so you can verify your download is the official one.
 
+### "Blocked by Play Protect"?
+
+Google scans apps installed outside the Play Store and may block a new app it doesn't recognise yet. CyberBenji is safe and signed — to get past it:
+
+- **First try:** on the warning, tap **More details → Install anyway** (or "Install without scanning"). This lets just this app through, no settings changed.
+- **If there's no "Install anyway":** open **Play Store → profile picture → Play Protect → ⚙️ settings → turn off "Scan apps with Play Protect"**, install CyberBenji, then **turn it back on**.
+
+> Leave Play Protect **on** for everything else — only toggle it off for this one install, then switch it back.
+
 ### Prefer not to unzip? Two free options
 
 - **Firefox** (free from the Play Store): open this page in Firefox and tap the [direct APK link](https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji.apk) (~28 MB). Firefox lets `.apk` files download normally — nothing to unzip.
