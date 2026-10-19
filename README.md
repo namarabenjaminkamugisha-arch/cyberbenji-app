@@ -30,7 +30,7 @@ Scan links, files and messages · block malicious domains · monitor threats · 
 
 ## Install
 
-1. **[Download the APK](https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji.apk)** on your phone (~70 MB, Android 8.0+).
+1. **[Download the APK](https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji.apk)** on your phone (~25 MB, Android 8.0+). Older or 32-bit phones can use the [universal build](https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app/releases/latest/download/cyberbenji-universal.apk) (~70 MB) instead.
 2. When prompted, allow your browser or Files app to **install unknown apps** (required for any app installed outside the Play Store).
 3. Tap the downloaded file to install, then open it. No account, no payment.
 
