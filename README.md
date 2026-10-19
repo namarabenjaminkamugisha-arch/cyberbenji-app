@@ -45,6 +45,14 @@ Some browsers (especially Chrome) block `.apk` downloads. Two free fixes:
 
 After downloading, if Android warns the app is "unknown", tap **More details → Install anyway** (normal for any app outside the Play Store).
 
+### Want automatic updates? (optional)
+
+[**Obtainium**](https://obtainium.imranr.dev) is a free, open-source app that installs CyberBenji straight from GitHub and notifies you when a new version ships — like a Play Store, with no account or cost:
+
+1. Install Obtainium (from [obtainium.imranr.dev](https://obtainium.imranr.dev) or its [GitHub releases](https://github.com/ImranR98/Obtainium/releases/latest)).
+2. Open it → **Add App** → paste `https://github.com/namarabenjaminkamugisha-arch/cyberbenji-app` → **Add**.
+3. If asked which file, pick `cyberbenji.apk`, then **Install**. Obtainium handles all future updates automatically.
+
 ## Privacy & security
 
 - Scans run **on-device**. There are no user accounts and no analytics tracking you.
