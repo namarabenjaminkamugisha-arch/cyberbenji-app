@@ -49,13 +49,13 @@ Google scans apps installed outside the Play Store and may block a new app it do
 
 ### Threat Monitoring greyed out? (notification access)
 
-To watch notifications for scams, CyberBenji needs **notification access**. On Android 13+, apps installed outside the Play Store have this blocked by default ("Restricted setting"). Allow it once:
+To watch notifications for scams, CyberBenji needs **notification access**. On Android 13+, apps installed outside the Play Store have this blocked by default ("Restricted setting"). **The order matters** — the "Allow restricted settings" option only appears *after* you tap the greyed switch once:
 
-1. Long-press the CyberBenji icon → **App info** (or **Settings → Apps → CyberBenji**).
-2. Tap the **⋮ menu** (top-right) → **Allow restricted settings**, confirm with your PIN/fingerprint.
-3. Back in CyberBenji, tap **Enable notification access** and switch CyberBenji **on**.
+1. In CyberBenji tap **Enable notification access** → tap CyberBenji's greyed switch. You'll see **"App was denied access"** → tap **Close**. (This arms the next step.)
+2. Open **App info** (long-press the icon → App info). Tap the **⋮ menu** (top-right) → **Allow restricted settings**, confirm with your PIN/fingerprint.
+3. Go back to **Enable notification access** and switch CyberBenji **on** — it works now.
 
-Scanning runs on-device — notifications never leave your phone.
+In the app, the "Enable live protection" card has a **"Switch greyed out? Tap here"** helper that walks you through this with one-tap buttons. Scanning runs on-device — notifications never leave your phone.
 
 ### Prefer not to unzip? Two free options
 
